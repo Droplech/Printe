@@ -1,0 +1,846 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.container{
+    width: 1155px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+h1{
+    font-size: 36px;
+}
+h1, h2, h3, p, a{
+    margin: 0; 
+    color: #3A4047;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 16px;
+
+}
+p, a{
+    font-size: 14px;
+}
+header{
+    width: 100%;
+    height: auto;
+    
+}
+header .info{
+    width: 100%;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    padding-top: 17px;
+}
+header .info .info_content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1155px;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+header .info .discription{
+    width: 390px;
+}
+header .info .discription h3{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 11px;
+}
+header .info .discription p{
+    text-align: center;
+    font-weight: 700;
+}
+header .info .login .login_content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 8px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+header .info .login .login_content img{
+    margin-right: 7px;
+}
+header .info .contacts{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 8px;
+    text-align: right;
+}
+header .info .contacts .phone{
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+header .info .contacts .phone h3 a{
+    font-size: 16px;
+    text-decoration: none;
+}
+header .info .contacts .phone .phoneList{
+    position: absolute;
+    top: 35px;
+    width: 219px;
+    height: 167px;
+    padding: 25px;
+    margin: 0;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+header .info .contacts .phone .phoneList::before{
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    position: absolute;
+    top: -3px;
+    right: 5px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+header .info .contacts .phone .phoneList .phoneList_item,
+footer .contnactUs_footer .phone .phoneList .phoneList_item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+header .nav .nav_burger {
+    display: none;
+}
+header .nav .nav_burger .nav_burger_button {
+    /* position: fixed; */
+    width: 83px;
+    height: 50px;
+    top: 30px;
+    right: 5px;
+    z-index: 50;
+    background-color: #4B69B0;
+    border-radius: 15px;
+}
+header .nav .nav_burger .nav_burger_button .nav_burger_item {
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background-color: #fff;
+}
+header .nav .nav_burger .nav_burger_button .One {
+    margin: 15px 0 0 17px;
+}
+header .nav .nav_burger .nav_burger_button .Two {
+    margin: 25px 0 0 17px;
+}
+header .nav .nav_burger .nav_burger_button .Three {
+    margin: 35px 0 0 17px;
+}
+header .nav .nav_burger .nav_burger_content {
+    padding: 60px  0;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+    z-index: 1 ;
+    
+}
+header .nav .nav_burger .nav_burger_content .nav_burger_body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+header .nav .nav_burger .nav_burger_content .nav_burger_body .nav_a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 65px;
+}
+header .nav .nav_burger .active .nav_burger_item {
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background-color: #fff;
+    margin: 30px 0 0 20px;
+}
+header .nav .nav_burger .active .One {
+    margin: 25px 0 0 17px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+header .nav   .nav_burger .active .Two {
+    margin: 30px 0 0 20px;
+    display: none;
+}
+header .nav .nav_burger .active .Three {
+    margin: 25px 0 0 17px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+header .info .contacts .phone .phoneList .phoneList_item img,
+footer .contnactUs_footer .phone .phoneList .phoneList_item img{
+    margin-right: 10px;
+}
+header .info .contacts .phone .phoneList .phoneList_item h3 a,
+footer .contnactUs_footer .phone .phoneList .phoneList_item h3 a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+}
+header .info .contacts .phone .imgFace{
+    margin-right: 20px;
+}
+header .info .contacts .phone .imgPhone{
+    margin-right: 9px;
+}
+header .info .contacts .phone .imgArrow{
+    margin-left: 6px;
+}
+header .info .contacts .shopCart{
+    margin-top: 10px;
+    margin-left: 20px;
+    position: relative;
+}
+header .info .contacts .shopCart .numOrder{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #1AB0CE;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    top: -6px;
+    right: -13px;
+}
+header .nav{
+    height: 57px;
+    position: relative;
+}
+header .nav .navList{
+    margin: 0 auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1155px;
+    height: 100%;
+    list-style: none;
+}
+header .nav .navList li{
+    position: relative;
+}
+header .nav .navList li a::before{
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: #E8EDF2;
+}
+header .nav .navList li a{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 100%;
+    padding: 0 25px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    line-height: 55px;
+    border-top: 1px solid transparent;
+}
+header .nav .navList li img{
+    margin: 19px 0 0 25px;
+}
+header .nav .navList li a:hover{
+    border-top: 1px solid #1AB0CE;
+    
+    color: #1AB0CE;
+}
+.preview{
+    background-image: url("../img/main/Rectangle.png");
+    height: 500px;
+    position: relative;
+}
+.preview .preview_content{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 153px ;
+}
+
+.preview .preview_content span{
+    font-size: 57px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+}
+.preview .preview_content .line{
+    height: 2px;
+    width: 120px;
+    background-color: #fff;
+    margin: 10px auto 15px auto;
+}
+.preview .preview_content h2{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 27px 0;
+}
+.preview .preview_content button{
+    padding: 12px 22px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1AB0CE;
+    background-color:#fff ;
+    border: 1px solid #1AB0CE;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.preview .preview_content button:hover{
+    color: #fff;
+    background-color: #1AB0CE;
+}
+.preview .callBack, footer .callBack{
+    position: absolute;
+    background: #1AB0CE;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    bottom: -10%;
+    right: 12%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 20px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+}
+.preview .callBack span, footer .callBack span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.product{
+    padding-top:29px ;
+}
+.product h1{
+    font-size: 36px;
+    font-weight: 400;
+    color: #3A4047;
+    text-align: center;
+    margin: 0;
+}
+.product .product_content{
+    margin-top: 44px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.product .product_content .officeProduct{
+    width: 370px;
+    height: 291px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    border: 1px solid #DCE1E6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+}
+.product .product_content .officeProduct .officeProduct_content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.product .product_content .officeProduct .officeProduct_content ul li{
+    margin-bottom: 17px;
+    font-size: 14px;
+}
+.product .product_content .officeProduct .officeProduct_content h3{
+    margin: 25px 0 25px 0;
+}
+.product .product_content .officeProduct .officeProduct_img{
+    margin-top: 25px;
+}
+.product .product_content .promProduct .promProduct_list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.aboutUS{
+    padding-top: 35px ;
+    padding-bottom: 45px ;
+    border-bottom: 1px solid #E8EDF2;
+}
+.aboutUS h1, .aboutUS h2 {
+    text-align: center;
+}
+.aboutUS  h2{
+    margin: 13px 0 34px 0;
+}
+.news{
+    padding-top: 33px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.news h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.news .news_content{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 20px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.news .news_content div{
+    width: 398px;
+    padding: 35px  0;
+    text-align: center;
+    border-top: 1px solid transparent;
+}
+.news .news_content div:hover{
+    -webkit-box-shadow: 0px -1px 0px #1AB0CE, 0px 14px 24px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px -1px 0px #1AB0CE, 0px 14px 24px rgba(0, 0, 0, 0.05);
+    border-top: 1px solid #1AB0CE;
+    color: #1AB0CE;
+    cursor: pointer;
+}
+.news .news_content div span{
+    font-size: 14px;
+    color: #BEC7D1; 
+}
+.news .news_content div h3{
+    font-weight: 400;
+    margin: 14px 0 0 0;
+}
+.news  button{
+    padding: 12px 22px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1AB0CE;
+    background-color:#fff ;
+    border: 1px solid #1AB0CE;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.news  button:hover{
+    color: #fff;
+    background-color: #1AB0CE;
+}
+.news .dop_news_content{
+    margin-bottom: 20px;
+}
+footer{
+    background: #F7F7F7;
+    padding: 19px 0 20px 0;
+    position: relative;
+}
+footer .footer_content{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+footer .footer_content .logo_footer{
+    width: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+footer .footer_content .logo_footer .img{
+    margin-bottom: 15px;
+}
+footer .footer_content .logo_footer span{
+    font-size: 14px;
+}
+footer .footer_content .about_footer{
+    width: 280px;
+    padding: 12px 0 0 0;
+}
+footer .footer_content .about_footer p:first-child{
+    margin-bottom: 33px;
+}
+footer .footer_content .list_footer{
+    padding: 9px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 290px;
+}
+footer .footer_content .list_footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+footer .contnactUs_footer {
+    width: 240px;
+    text-align: right;
+}
+footer .contnactUs_footer  .phone{
+    margin-top: 8px ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+footer .contnactUs_footer  .phone .phoneList{
+    position: absolute;
+    background: #fff;
+    bottom: -100px;
+    right: 22px;
+    width: 190px;
+    height: 100px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+footer .contnactUs_footer  .phone .phoneList{
+    padding: 6px 12px;
+    margin: 0;
+}
+footer .contnactUs_footer .infoServices img{
+    vertical-align: middle;
+}
+footer .contnactUs_footer .contact_footer{
+    display: block;
+    margin: 20px 0 33px 0;
+}
+footer .contnactUs_footer h3 a{
+    font-size: 16px;
+    text-decoration: none;
+}
+footer .contnactUs_footer .infoServices span{
+    text-transform: uppercase;
+    
+    font-size: 11px;
+}
+footer .callBack_footer{
+    top: -35%;
+    right: 14%;
+}
+
+@media screen and (max-width: 1155px){
+    .container, header .nav .navList, header .info .info_content{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1024px){
+    header .nav .navList li a{
+        font-size: 14px;
+        padding: 0 21px;
+    }
+    header .info .info_content .contacts_content{
+        width: 160px;
+        text-align: center;
+    }
+    header .info .info_content .contacts_content .imgFace,
+    header .info .info_content .contacts_content .imgPhone,
+    footer .callBack_footer,
+    footer .contnactUs_footer .phone .imgFace,
+    footer .contnactUs_footer .phone .imgPhone{
+        display: none;
+    }
+    .product .product_content{
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .product .product_content div{
+        margin-bottom: 70px;
+    }
+    .aboutUS{
+        padding-top: 0;
+    }
+    header .info{
+        padding-bottom: 17px;
+    }
+    .news .news_content div{
+        width: 280px;
+    }
+    footer .contnactUs_footer .phone{
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+    footer .contnactUs_footer .phone .phoneList{
+        bottom: -106px;
+        right: -7px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    header .info .contacts .phone .phoneList{
+        right: 5px;
+    }
+    header .info .info_content{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around
+    }
+    header .info .contacts .phone .phoneList{
+        height: auto;
+    }
+    header .nav .navList{
+        width: 100%;
+        margin: 0;
+    }
+    header .nav .navList li a{
+        padding: 0 9px;
+    }
+    footer .footer_content{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between
+    }
+    footer .footer_content .about_footer{
+        text-align: right;
+    }
+    .news .news_content{
+        margin-bottom: 40px;
+    }
+    .news .news_content div{
+        padding: 35px 20px;
+    }
+    footer .footer_content .list_footer{
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+}
+@media screen and (max-width: 414px){
+    header .nav .navList{
+        display: none;
+    }
+    header .nav .nav_burger {
+        display: block;
+    }
+    .news .news_content{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    /* .news .news_content div{
+        margin: 0 auto;
+    } */
+    header .nav{
+        height: 49px;
+    }
+    header .nav .nav_burger .nav_burger_button{
+        width: 100%;
+        height: 50px;
+        top: 34%;
+        right: 0px;
+        background-color: transparent;
+    }
+    header .nav .nav_burger .nav_burger_button .nav_burger_item {
+        position: absolute;
+        height: 3px;
+        width: 50px;
+        background-color: #000;
+        margin-left: 44%;
+    }
+    header .nav .nav_burger .nav_burger_content{
+        top: 101%;
+        padding: 20px 0;
+    }
+    header .nav .nav_burger .nav_burger_content .nav_burger_body .nav_a{
+        color: #3A4047;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .preview{
+        height: auto;
+    }
+    .preview .preview_content span{
+        font-size: 30px;
+    }
+    .preview .preview_content{
+        padding: 40px 0;
+    }
+    .preview .callBack, footer .callBack{
+        display: none;
+    }
+    .product .product_content div{
+        margin-bottom: 30px;
+    }
+    footer .footer_content{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    footer .footer_content .logo_footer,
+    footer .footer_content .about_footer,
+    footer .contnactUs_footer{
+        text-align: center;
+    }
+    footer .contnactUs_footer .phone{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    footer .footer_content .about_footer{
+        padding: 20px 0;
+    }
+    footer .footer_content .about_footer p:first-child{
+        margin-bottom: 10px;
+    }
+    footer .footer_content .about_footer p:nth-child(2){
+        font-weight: 700;
+    }
+    footer .contnactUs_footer{
+        margin-top: 20px;
+    }
+    footer .contnactUs_footer .contact_footer{
+        margin: 10px 0;
+    }
+    footer .contnactUs_footer .phone .phoneList{
+        height: auto;
+        width: auto;
+        padding: 3px 12px;
+        right: 48px;
+        bottom: -66px;
+    }
+    footer .contnactUs_footer .phone .phoneList .phoneList_item h3 a{
+        font-size: 14px;
+    }
+    footer .contnactUs_footer .phone .phoneList .phoneList_item img{
+        height: 15px;
+    }
+    header .info .contacts .shopCart{
+        display: none;
+    }
+    header .info .contacts .phone{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
